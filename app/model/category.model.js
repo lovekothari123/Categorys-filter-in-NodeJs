@@ -5,7 +5,7 @@ const CategorySchema = mongoose.Schema(
   {
     name: {
       type: String
-    },    
+    },
     Status: {
       type: String
     },
@@ -35,6 +35,10 @@ const CategorySchema = mongoose.Schema(
     },
     Endtime: {
       type: String
+    },
+    coordinates: {
+      type: [Number],
+      default: [0, 0]
     },
     Gender: { type: String, enum: ["Male", "female"] },
     Illness: {
